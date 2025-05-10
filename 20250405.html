@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Städer Formulär</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stil.css">
+    <script src="skript.js" defer></script>
+</head>
+<body>
+    <div class="huvud">
+        <h1>Stadsformulär</h1>
+        <h2> <i>Bedömnings uppgift Patrik Khandani 2025-04-05 </i></h2>
+        <p>Lägg till dina favoritstäder:</p>
+    </div>
+
+    <div class="behållare">
+        <form id="stadFormulär">
+            <input type="text" id="stadInput" placeholder="Ange stad" required>
+            <button type="submit" class="knapp grön">Lägg till</button>
+        </form>
+        <button onclick="sorteraStäder()" class="knapp blå">Sortera städer</button>
+
+        <label>Lista över städer:</label>
+        <input type="text" id="stadLista" readonly>
+        <div id="stadInfo"></div>
+    </div>
+</body>
+</html>
